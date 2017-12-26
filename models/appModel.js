@@ -12,8 +12,6 @@ AppModel.prototype.InitEvents = function(){
             var percentChange = ((last - prev) / prev) * 100;
             data.result[i].PercentChange = percentChange;
         }
-
-
         res.render("test", data);
     });
 };
