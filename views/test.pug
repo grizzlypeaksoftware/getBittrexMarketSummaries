@@ -1,0 +1,12 @@
+extends template.pug
+
+block content    
+    div.row
+        each summary in result
+            div.col-md-3
+                h3= summary.MarketName
+                hr
+                p= summary.Last
+                p= summary.PercentChange
+                
+
